@@ -12,8 +12,8 @@ MODEL_FILE = 'sentiment_model.pkl'
 
 # Load and preprocess dataset
 @st.cache_data
-def load_and_preprocess_data(file_path):
-    data = pd.read_csv(file_path)
+def load_and_preprocess_data(./Reviews.csv):
+    data = pd.read_csv(./Reviews.csv)
     data['Review'] = data['Review'].str.lower()
     return data
 
